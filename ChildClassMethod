@@ -1,0 +1,25 @@
+import org.testng.annotations.*;
+
+public class childClass {
+    @BeforeMethod
+    public void beforeMethodChild(){
+        System.out.println ("Child before Test method");
+    }
+    @AfterMethod
+    public void afterMethodChild(){
+        System.out.println ("Child After Test method");
+    }
+    @BeforeClass
+    public void beforeClassChild(){
+        System.out.println ("Child before Class method");
+    }
+    @AfterClass
+    public void afterClassChild(){
+        System.out.println ("Child After Class method");
+    }
+    @Test
+    public void testName(){
+        System.out.println ("Test Executed in Child Class");
+    }
+
+}
